@@ -86,17 +86,6 @@ Características principales:
 
 ---
 
-## JavaScript Vanilla
-
-Se utilizó JavaScript puro para:
-
-- apertura/cierre del menú mobile,
-- manejo del overlay,
-- interacciones básicas del sidebar.
-
-No se utilizaron frameworks externos.
-
----
 
 # Decisiones de Diseño
 
