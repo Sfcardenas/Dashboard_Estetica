@@ -94,7 +94,6 @@ a {
   height: 100vh;
 }
 
-/* SIDEBAR */
 
 .sidebar {
 
@@ -247,7 +246,6 @@ a {
   overflow: hidden;
 }
 
-/* HEADER */
 
 .header {
 
@@ -495,7 +493,6 @@ a {
   background: #374151;
 }
 
-/* BUTTONS */
 
 .btn {
 
@@ -568,7 +565,6 @@ a {
   background: var(--surface-3);
 }
 
-/* MAIN */
 
 .main {
 
@@ -585,7 +581,6 @@ a {
   gap: var(--s6);
 }
 
-/* CARDS */
 
 .insight,
 .conversion__card,
@@ -619,7 +614,6 @@ a {
   box-shadow: var(--shadow-lg);
 }
 
-/* INSIGHT */
 
 .insight {
   padding: var(--s5);
@@ -650,7 +644,6 @@ a {
   color: var(--green);
 }
 
-/* TABLE */
 
 .table-wrapper {
   overflow-x: auto;
@@ -695,7 +688,6 @@ a {
   color: var(--green);
 }
 
-/* BADGES */
 
 .badge {
 
@@ -726,7 +718,6 @@ a {
   color: var(--green);
 }
 
-/* GRID */
 
 .intel-grid {
 
@@ -737,7 +728,6 @@ a {
   gap: var(--s6);
 }
 
-/* ALERTS */
 
 .alert-list {
 
@@ -787,7 +777,6 @@ a {
   color: var(--text-secondary);
 }
 
-/* OVERLAY */
 
 .sidebar-overlay {
 
@@ -815,7 +804,6 @@ a {
   visibility: visible;
 }
 
-/* SCROLLBAR */
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -827,8 +815,6 @@ a {
 
   border-radius: 999px;
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 1024px) {
 
@@ -911,5 +897,6 @@ a {
   .funnel__note {
     display: none;
   }
+  .btn--icon{padding-left: 120px ;}
 }
 
