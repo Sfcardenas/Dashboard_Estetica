@@ -1,8 +1,8 @@
-# Metrikabase Dashboard
+# Base Dashboard
 
 ## Descripción
 
-Vase es un dashboard administrativo diseñado para un sistema operativo SaaS orientado a clínicas estéticas, salones premium y centros de bienestar.
+Base es un dashboard administrativo diseñado para un sistema operativo SaaS orientado a clínicas estéticas, salones premium y centros de bienestar.
 
 La interfaz fue construida con un enfoque moderno tipo enterprise dashboard, priorizando:
 
