@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>base — Dashboard</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- MOBILE OVERLAY -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar" aria-label="Sidebar principal">
+
+      <div class="sidebar__brand">
+
+        <span class="sidebar__brand-dot" aria-hidden="true"></span>
+
+        <strong class="sidebar__brand-name">
+          base
+        </strong>
+
+      </div>
+
+      <nav aria-label="Secciones del sistema">
+
+        <ul class="nav__list">
+
+          <li>
+            <a href="#" class="nav__link nav__link--active">
+
+              <span class="nav__dot nav__dot--dashboard"></span>
+
+              Dashboard
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="nav__link">
+
+              <span class="nav__dot nav__dot--agenda"></span>
+
+              Agenda
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="nav__link">
+
+              <span class="nav__dot nav__dot--clientes"></span>
+
+              Clientes
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="nav__link">
+
+              <span class="nav__dot nav__dot--caja"></span>
+
+              Caja
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="nav__link">
+
+              <span class="nav__dot nav__dot--empleados"></span>
+
+              Empleados
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="nav__link">
+
+              <span class="nav__dot nav__dot--whatsapp"></span>
+
+              WhatsApp
+
+            </a>
+          </li>
+
+          <li class="nav__item--divided">
+            <a href="#" class="nav__link">
+
+              <span class="nav__dot nav__dot--config"></span>
+
+              Configuración
+
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <footer class="sidebar__footer">
+
+        <span class="sync__dot"></span>
+
+        <small class="sync__text">
+          Sincronizado — hace 1 min.
+        </small>
+
+      </footer>
+
+    </aside>
+
+    <!-- WORKSPACE -->
+    <div class="workspace">
+
+      <header class="header">
+
+        <div class="header__left">
+
+          <!-- MOBILE BUTTON -->
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú">
+
+            ☰
+
+          </button>
+
+          <p class="header__badge">
+            Hoy: 12 Citas
+          </p>
+
+        </div>
+
+        <div class="header__actions">
+
+          <div class="status-pill">
+
+            <span class="status-pill__dot"></span>
+
+            <span class="status-pill__text">
+              WhatsApp Active
+            </span>
+
+          </div>
+
+          <button class="btn btn--primary">
+            + Nueva Cita
+          </button>
+
+          <button class="btn btn--icon">
+            🔔
+          </button>
+
+          <div class="user-avatar"></div>
+
+        </div>
+
+      </header>
+
+      <main class="main">
+
+        <!-- INSIGHT -->
+        <section class="insight">
+
+          <div class="insight__header">
+
+            <span class="insight__icon"></span>
+
+            <h2 class="insight__title">
+              Recordatorio </h2>
+
+          </div>
+
+          <p class="insight__text">
+            Clientes con seguimiento post-tratamiento 2:00 pm
+          </p>
+
+        </section>
+
+        <!-- TEAM -->
+        <section>
+
+          <h2 class="section-title">
+            Salud de Capacidad del Equipo
+          </h2>
+
+          <div class="table-wrapper">
+
+            <table class="team-table">
+
+              <thead>
+
+                <tr>
+
+                  <th>Especialista</th>
+                  <th>Ocupación</th>
+                  <th>Ingresos</th>
+                  <th>Re-Booking</th>
+                  <th>Satisfacción</th>
+                  <th>Status</th>
+
+                </tr>
+
+              </thead>
+
+              <tbody>
+
+                <tr>
+
+                  <td class="td--name">
+                    Dra. Sofia Mendez
+                  </td>
+
+                  <td>92%</td>
+
+                  <td>$850k</td>
+
+                  <td>
+                    68%
+                    <span class="trend trend--up">
+                      Alta
+                    </span>
+                  </td>
+
+                  <td class="td--score">
+                    4.9/5
+                  </td>
+
+                  <td>
+                    <span class="badge badge--warning">
+                      Riesgo Sobrecarga
+                    </span>
+                  </td>
+
+                </tr>
+
+                <tr>
+
+                  <td class="td--name">
+                    Lic. Andrea Ruiz
+                  </td>
+
+                  <td>78%</td>
+
+                  <td>$620k</td>
+
+                  <td>
+                    75%
+                    <span class="trend trend--up">
+                      Alta
+                    </span>
+                  </td>
+
+                  <td class="td--score">
+                    5.0/5
+                  </td>
+
+                  <td>
+                    <span class="badge badge--success">
+                      Óptimo
+                    </span>
+                  </td>
+
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </section>
+
+        <!-- GRID -->
+        <section class="intel-grid">
+
+          <!-- CONVERSION -->
+          <section>
+
+            <h2 class="section-title">
+              Inteligencia de Conversión
+            </h2>
+
+            <div class="conversion__card">
+
+              <p class="conversion__intro">
+
+                Las confirmaciones por WhatsApp redujeron
+                los no-shows en un
+
+                <strong class="conversion__highlight">
+                  14%
+                </strong>
+
+                esta semana.
+
+              </p>
+
+              <ol class="funnel">
+
+                <li class="funnel__step">
+
+                  <span class="funnel__label">
+                    Contactos
+                  </span>
+
+                  <div class="funnel__track">
+
+                    <div class="funnel__fill funnel__fill--gray" style="width:100%;">
+                    </div>
+
+                  </div>
+
+                  <span class="funnel__count">
+                    142
+                  </span>
+
+                  <span class="funnel__note">
+                    Inicio
+                  </span>
+
+                </li>
+
+                <li class="funnel__step">
+
+                  <span class="funnel__label">
+                    Conversación
+                  </span>
+
+                  <div class="funnel__track">
+
+                    <div class="funnel__fill funnel__fill--blue-light" style="width:80%;">
+                    </div>
+
+                  </div>
+
+                  <span class="funnel__count">
+                    114
+                  </span>
+
+                  <span class="funnel__note funnel__note--blue">
+                    80%
+                  </span>
+
+                </li>
+
+                <li class="funnel__step">
+
+                  <span class="funnel__label">
+                    Agendados
+                  </span>
+
+                  <div class="funnel__track">
+
+                    <div class="funnel__fill funnel__fill--blue" style="width:45%;">
+                    </div>
+
+                  </div>
+
+                  <span class="funnel__count">
+                    64
+                  </span>
+
+                  <span class="funnel__note">
+                    Alta intención
+                  </span>
+
+                </li>
+
+                <li class="funnel__step">
+
+                  <span class="funnel__label">
+                    Confirmados
+                  </span>
+
+                  <div class="funnel__track">
+
+                    <div class="funnel__fill funnel__fill--green" style="width:41%;">
+                    </div>
+
+                  </div>
+
+                  <span class="funnel__count">
+                    58
+                  </span>
+
+                  <span class="funnel__note funnel__note--green">
+                    Compromiso
+                  </span>
+
+                </li>
+
+                <li class="funnel__step">
+
+                  <span class="funnel__label">
+                    Asistieron
+                  </span>
+
+                  <div class="funnel__track">
+
+                    <div class="funnel__fill funnel__fill--green" style="width:38%;">
+                    </div>
+
+                  </div>
+
+                  <span class="funnel__count">
+                    54
+                  </span>
+
+                  <span class="funnel__note">
+                    Ingreso real
+                  </span>
+
+                </li>
+
+              </ol>
+
+              <div class="conversion__footer">
+
+                <p class="conversion__rate">
+
+                  Tasa final:
+                  <strong>38%</strong>
+
+                </p>
+
+                <p class="conversion__trend">
+                  +12% vs semana pasada
+                </p>
+
+              </div>
+
+            </div>
+
+          </section>
+
+          <!-- ALERTS -->
+          <section>
+
+            <h2 class="section-title">
+              Guía Predictiva
+            </h2>
+
+            <div class="alert-list">
+
+              <article class="alert-card">
+
+                <div class="alert-card__icon alert-card__icon--yellow"></div>
+
+                <div class="alert-card__body">
+
+                  <h3 class="alert-card__title">
+                    Demanda alta mañana 4-6PM
+                  </h3>
+
+                  <p class="alert-card__desc">
+                    Se recomienda pausar reservas online.
+                  </p>
+
+                </div>
+
+              </article>
+
+              <article class="alert-card">
+
+                <div class="alert-card__icon alert-card__icon--purple"></div>
+
+                <div class="alert-card__body">
+
+                  <h3 class="alert-card__title alert-card__title--vip">
+                    3 clientes VIP inactivos
+                  </h3>
+
+                  <p class="alert-card__desc">
+                    Activar re-enganche automático.
+                  </p>
+
+                  <button class="btn btn--outline">
+                    Revisar lista
+                  </button>
+
+                </div>
+
+              </article>
+
+            </div>
+
+          </section>
+
+        </section>
+
+      </main>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    const sidebar = document.getElementById("sidebar");
+
+    const overlay = document.getElementById("sidebarOverlay");
+
+    const button = document.getElementById("mobileMenuBtn");
+
+    button.addEventListener("click", () => {
+
+      sidebar.classList.toggle("sidebar--open");
+
+      overlay.classList.toggle("sidebar-overlay--visible");
+
+    });
+
+    overlay.addEventListener("click", () => {
+
+      sidebar.classList.remove("sidebar--open");
+
+      overlay.classList.remove("sidebar-overlay--visible");
+
+    });
+
+  </script>
+
+</body>
+
+</html>
